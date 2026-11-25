@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-my-font: var(--font-my-font);
+}
