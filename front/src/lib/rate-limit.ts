@@ -1,6 +1,4 @@
-// In-memory sliding-window limiter. It resets when the server restarts and is
-// not shared between server instances, so swap it for Redis/Upstash if the
-// site runs on serverless or several instances.
+// In-memory sliding-window limiter
 const hits = new Map<string, number[]>();
 
 export function rateLimit(
